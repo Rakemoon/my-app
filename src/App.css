@@ -22,3 +22,12 @@
 .App-link {
   color: #61dafb;
 }
+
+.progress-label {
+  float: left;
+  margin-top: -5.5px;
+}
+
+.progress-bar-color-me {
+  background-color: #14bcf0 !important;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { CSSProperties } from 'react';
 import './App.css';
+import ProgressBar from './ProgBar';
 //@ts-ignore 7016
 //@ts-ignore 2559
 import { stripIndents } from 'common-tags';
@@ -65,6 +66,12 @@ function App() {
                     >
                         {getSocial(userProfile.socials)}
                     </div>
+                    {ProgressBar([
+                        { name: 'Javascript', completed: 85, margin: '2em' },
+                        { name: 'Typescript', completed: 80, margin: '1.9em' },
+                        { name: 'Node.js', completed: 75, margin: '3.2em' },
+                        { name: 'React', completed: 20, margin: '4em' },
+                    ])}
                 </div>
             </header>
         </div>
