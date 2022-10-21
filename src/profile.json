@@ -1,0 +1,21 @@
+{
+    "name": "Rakemoon",
+    "avatar": "profile-img.jpg",
+    "socials": [
+        {
+            "type": "github",
+            "url": "https://github.com/Rakemoon"
+        },
+        {
+            "type": "facebook",
+            "url": "https://www.facebook.com/adzikri.fauzi.7"
+        }
+    ],
+    "highlights": ["Programmer", "React Learner", "Fresh Graduate", "Moonviber"],
+    "skill": [
+        { "name": "Typescript", "rate": 85 },
+        { "name": "Javascript", "rate": 85 },
+        { "name": "CSS", "rate": 20 },
+        { "name": "HTML", "rate": 30 }
+    ]
+}
