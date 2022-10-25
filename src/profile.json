@@ -1,5 +1,6 @@
 {
     "name": "Rakemoon",
+    "realName": "Adzikri Fauzi Shiddiq",
     "avatar": "profile-img.jpg",
     "socials": [
         {
@@ -9,13 +10,61 @@
         {
             "type": "facebook",
             "url": "https://www.facebook.com/adzikri.fauzi.7"
+        },
+        {
+            "type": "twitter",
+            "url": "#"
+        },
+        {
+            "type": "linkedin",
+            "url": "#"
+        },
+        {
+            "type": "skype",
+            "url": "#"
+        },
+        {
+            "type": "gitlab",
+            "url": "#"
         }
     ],
     "highlights": ["Programmer", "React Learner", "Fresh Graduate", "Moonviber"],
-    "skill": [
+    "skills": [
         { "name": "Typescript", "rate": 85 },
         { "name": "Javascript", "rate": 85 },
         { "name": "CSS", "rate": 20 },
-        { "name": "HTML", "rate": 30 }
-    ]
+        { "name": "HTML", "rate": 30 },
+        { "name": "Mikrotik", "rate": 45 }
+    ],
+    "languages": [
+        { "name": "Indonesia", "rate": 90 },
+        { "name": "Sunda", "rate": 95 },
+        { "name": "English", "rate": 70 },
+        { "name": "Japanese", "rate": 75 }
+    ],
+    "workHistory": [
+        {
+            "title": "Internship Student",
+            "date": "2021/01 - 2021/03",
+            "at": "Ajat Computer System, Ciamis, Jawa Barat",
+            "does": [
+                "Analyzed problems and worked with teams to develop solutions about OS Installation and Build Computer",
+                "Provide clerical support, addressing routine and special requirements"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "Computer and Engineering Network",
+            "date": "2019/07 - 2022/06",
+            "at": "SMKN NEGERI 1 PANJALU, Ciamis, Jawa Barat",
+            "does": [
+                "Learn about TCP/IP and VoIP",
+                "Experienced work as team and make Blog Website",
+                "Analyzed how debian work to create DNS Server",
+                "Learn and Try using Mikrotik Router"
+            ]
+        }
+    ],
+    "about": "Fresh Graduate from Highschool and ready to work with team or personal. Currently im learning to understand UI/UX and front end with react."
 }

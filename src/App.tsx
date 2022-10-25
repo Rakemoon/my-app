@@ -4,9 +4,10 @@ import AOS from 'aos';
 import SideBarToggle from './SideBarToggle';
 import Header from './Header';
 import Hero from './Hero';
+import Main from './Main';
 
 import 'aos/dist/aos.css';
-import './App.scss';
+import './App.css';
 
 class App extends React.Component {
     componentDidMount(): void {
@@ -24,6 +25,7 @@ class App extends React.Component {
                 <SideBarToggle />
                 <Header />
                 <Hero />
+                <Main />
             </>
         );
     }

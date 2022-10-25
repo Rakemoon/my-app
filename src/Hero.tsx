@@ -8,7 +8,8 @@ class Hero extends React.Component {
                 id="hero"
                 className="d-flex flex-column justify-content-center align-items-center"
             >
-                <div className="heroContainer text-left" data-aos="fade-in">
+                <div className="hero-container text-center" data-aos="fade-in">
+                    <img src="/logo128.png" className="img-fluid" />
                     <h1>Rakemoon</h1>
                     <p>
                         I'm <Highlights />
