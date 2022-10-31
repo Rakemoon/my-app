@@ -1,31 +1,22 @@
-import React from 'react';
-import Typed, { TypedOptions } from 'typed.js';
+import React, { MutableRefObject, useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 import profile from './profile.json';
 
-class Highlights extends React.Component {
-    private typed: Typed | null = null;
-
-    private el: HTMLSpanElement | null = null;
-
-    componentDidMount(): void {
-        const options: TypedOptions = {
+function Highlights(): JSX.Element {
+    const el: MutableRefObject<null | HTMLSpanElement> = useRef(null);
+    const typed: MutableRefObject<null | Typed> = useRef(null);
+    useEffect(() => {
+        typed.current = new Typed(el.current!, {
             strings: profile.highlights,
             typeSpeed: 100,
             backSpeed: 50,
             loop: true,
             smartBackspace: true,
-        };
+        });
 
-        this.typed = new Typed(this.el!, options);
-    }
-
-    componentWillUnmount(): void {
-        this.typed!.destroy();
-    }
-
-    render(): JSX.Element {
-        return <span ref={(el) => (this.el = el)} />;
-    }
+        return () => typed.current!.destroy();
+    });
+    return <span ref={el} />;
 }
 
 export default Highlights;

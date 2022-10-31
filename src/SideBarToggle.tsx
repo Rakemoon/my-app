@@ -1,31 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class SideBarToggle extends React.Component {
-    public state = { sidBarToggleActive: false };
-
-    public constructor(props: {} | Readonly<{}>) {
-        super(props);
-        this.handleToggle = this.handleToggle.bind(this);
-    }
-
-    private handleToggle(): void {
-        this.setState({ sidBarToggleActive: !this.state.sidBarToggleActive });
-        document.body.classList.toggle('mobile-nav-active');
-    }
-
-    render(): JSX.Element {
-        const { sidBarToggleActive } = this.state;
-        return (
-            <i
-                className={
-                    sidBarToggleActive
-                        ? 'bi mobile-nav-toggle d-xl-none bi-x'
-                        : 'bi mobile-nav-toggle d-xl-none bi-list'
-                }
-                onClick={this.handleToggle}
-            />
-        );
-    }
+function SideBarToggle(): JSX.Element {
+    const [isActive, setState] = useState(false);
+    return (
+        <i
+            className={
+                isActive
+                    ? 'bi mobile-nav-toggle d-xl-none bi-x'
+                    : 'bi mobile-nav-toggle d-xl-none bi-list'
+            }
+            onClick={() => {
+                setState(!isActive);
+                document.body.classList.toggle('mobile-nav-active');
+            }}
+        />
+    );
 }
 
 export default SideBarToggle;
