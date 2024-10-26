@@ -17,7 +17,7 @@
         },
         {
             "type": "linkedin",
-            "url": "#"
+            "url": "https://www.linkedin.com/in/adzikri-fauzi-shiddiq"
         },
         {
             "type": "skype",
@@ -34,7 +34,8 @@
         { "name": "Javascript", "rate": 85 },
         { "name": "CSS", "rate": 20 },
         { "name": "HTML", "rate": 30 },
-        { "name": "Mikrotik", "rate": 45 }
+        { "name": "Mikrotik", "rate": 45 },
+        { "name": "Rust", "rate": 40 },
     ],
     "languages": [
         { "name": "Indonesia", "rate": 90 },
@@ -51,6 +52,16 @@
                 "Analyzed problems and worked with teams to develop solutions about OS Installation and Build Computer",
                 "Provide clerical support, addressing routine and special requirements"
             ]
+        },
+        {
+            "title": "Warehouse & Ecommerce Admin",
+            "date": "2022/12 - 2024/7",
+            "at": "Noforty Project, Bandung, Jawa Barat",
+            "does": [
+                "Responsible for managing flow of goods in and out",
+                "Handling customer orders",
+            ]
+
         }
     ],
     "education": [
